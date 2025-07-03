@@ -1,8 +1,8 @@
-import 'package:appescolar/view/home/home.dart';
+import 'package:appescolar/view/user/login/login.dart';
 import 'package:flutter/material.dart';
 import 'package:appescolar/view/onboard/onboardbase.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
 
 class Onboard extends StatefulWidget {
   const Onboard({super.key});
@@ -28,7 +28,7 @@ class _OnboardState extends State<Onboard> {
     if (_pageController.page?.round() == onboardPag.length - 1) {
       await _marcarVistoTela();
       Navigator.of(context).pushReplacement(
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const Login()),
       );
     } else {
       _pageController.nextPage(

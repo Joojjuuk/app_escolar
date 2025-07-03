@@ -12,10 +12,13 @@ class AppColors{
   static const Color whiteText = Color(0xFFFFFFFF);
   static const Color grayText = Color(0xFF6C7278);
   static const Color lightGrayText = Color(0xFF333333);
+  static const Color lightBlueText = Color(0xFF4D81E7);
 
   //Fundo Botao
   static const Color lightBlueBtn = Color(0xFF86CFE2);
 
+  //Borders e outros
+  static const Color whiteBord = Color(0XFFEDF1F3);
   //Cores de Status
   static const Color errorColor = Colors.red;
   static const Color successColor = Colors.green;

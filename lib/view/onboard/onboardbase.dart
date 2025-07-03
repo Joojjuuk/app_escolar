@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:appescolar/core/theme/app_button_styles.dart';
+import 'package:appescolar/core/theme/app_text_style.dart';
 
 class Onboardbase extends StatelessWidget {
   const Onboardbase(
@@ -44,17 +46,7 @@ class Onboardbase extends StatelessWidget {
             ),
             Align(
               alignment: Alignment.centerLeft,
-              child: Text(
-                titulo,
-                style: const TextStyle(
-                  color: Color(0xFF28305A),
-                  fontSize: 38,
-                  fontFamily: 'AbrilFatface',
-                  height: 1,
-                  fontWeight: FontWeight.w600,
-                ),
-                textAlign: TextAlign.left,
-              ),
+              child: Text(titulo, style: AppTextStyle.tituloPrincipal),
             ),
             const SizedBox(height: 30),
             Expanded(
@@ -64,30 +56,14 @@ class Onboardbase extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            Text(
-              descricao,
-              style: TextStyle(
-                color: Color(0xFF000000),
-                fontWeight: FontWeight.normal,
-                fontFamily: 'Montserrat',
-                height: 1.1,
-                fontSize: 21,
-              ),
-            ),
+            Text(descricao, style: AppTextStyle.textoGrande),
             const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
               height: 60,
               child: ElevatedButton(
                   onPressed: botaoPressionado,
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    foregroundColor: Colors.black,
-                    shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
-                        side: const BorderSide(color: Colors.black, width: 2)),
-                    elevation: 4,
-                  ),
+                  style: AppBtn.botaoPretoBranco,
                   child: Text(
                     'CONTINUAR',
                     style: TextStyle(

@@ -3,6 +3,7 @@ import 'package:appescolar/core/constants/app_colors.dart';
 
 class AppTextStyle{
 
+
   static const TextStyle tituloPrincipal = TextStyle(
     color: AppColors.blueTitle,
     fontSize: 40,
@@ -34,11 +35,23 @@ class AppTextStyle{
 
   static const TextStyle textoDescricao = TextStyle(
     color: AppColors.grayText,
-    fontWeight: FontWeight.normal,
+    fontWeight: FontWeight.w600,
+    fontFamily: 'Montserrat',
+    fontSize: 14,
+  );
+  static const TextStyle textoLoginClicavel = TextStyle(
+    color: AppColors.lightBlueText,
+    fontWeight: FontWeight.w600,
     fontFamily: 'Montserrat',
     fontSize: 14,
   );
 
+  static const TextStyle textBtn = TextStyle(
+        color: Colors.white,
+        fontWeight: FontWeight.bold,
+        fontFamily: 'Montserrat',
+        fontSize: 21
+  );
 
 
 
