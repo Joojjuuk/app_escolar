@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\admmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\admmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\appescolar-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\appescolar-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdmModel.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T02:50:36.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlunoModel.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-27T02:49:00.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UsuarioModel.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T23:50:17.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Data\\DataContext.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Data\\DataContext.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Data\\DataContext.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\Data\\DataContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T23:09:39.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppEscolar-BackEnd.csproj",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
+              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
+              "RelativeToolTip": "AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-07-26T23:09:38.854Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

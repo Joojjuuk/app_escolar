@@ -1,0 +1,6 @@
+@AppEscolar_BackEnd_HostAddress = http://localhost:5224
+
+GET {{AppEscolar_BackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
