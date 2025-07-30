@@ -12,5 +12,8 @@ namespace AppEscolar_BackEnd.Model
        public string Nome { get; set; }
        public string Cargo { get;set; }
 
+       [Required]
+       public ICollection<NoticiasModel> NoticiasPublicadas { get; set; } = new List<NoticiasModel>();
+
     }
 }

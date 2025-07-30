@@ -1,26 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\",
+  "WorkspaceRootPath": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\admmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\model\\admmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\admmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\usuariomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\dto\\adm\\admcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\dto\\adm\\admcreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\appescolar-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\appescolar-backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\model\\alunomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\appescolar-backend\\appescolar-backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\data\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\dto\\adm\\admviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\dto\\adm\\admviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\dto\\aluno\\alunoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\dto\\aluno\\alunoview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|c:\\projetosemflutter\\pei sustentabilidade\\appescolar-backend\\appescolar-backend\\dto\\aluno\\alunocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22D47057-6017-4BA5-9F09-98FB9645A598}|AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj|solutionrelative:appescolar-backend\\dto\\aluno\\alunocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,64 +42,81 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdmModel.cs",
-              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
-              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
-              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
-              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T02:50:36.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AlunoModel.cs",
-              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
               "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\AlunoModel.cs",
-              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AlunoModel.cs",
               "RelativeToolTip": "AppEscolar-BackEnd\\Model\\AlunoModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T02:49:00.179Z",
+              "WhenOpened": "2025-07-30T14:35:22.993Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UsuarioModel.cs",
-              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
-              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
-              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
-              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\UsuarioModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdmModel.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\Model\\AdmModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T23:50:17.953Z"
+              "WhenOpened": "2025-07-30T14:35:21.714Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Data\\DataContext.cs",
-              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\Data\\DataContext.cs",
-              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\Data\\DataContext.cs",
-              "RelativeToolTip": "AppEscolar-BackEnd\\Data\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AdmCreateDTO.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Adm\\AdmCreateDTO.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\DTO\\Adm\\AdmCreateDTO.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Adm\\AdmCreateDTO.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\DTO\\Adm\\AdmCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-26T23:09:39.613Z"
+              "WhenOpened": "2025-07-30T14:35:20.267Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AppEscolar-BackEnd.csproj",
-              "DocumentMoniker": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
-              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
-              "ToolTip": "C:\\ProjetosEmFlutter\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
-              "RelativeToolTip": "AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
+              "Title": "AdmViewDTO.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Adm\\AdmViewDTO.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\DTO\\Adm\\AdmViewDTO.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Adm\\AdmViewDTO.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\DTO\\Adm\\AdmViewDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-26T23:09:38.854Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:35:19.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlunoView.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Aluno\\AlunoView.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\DTO\\Aluno\\AlunoView.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Aluno\\AlunoView.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\DTO\\Aluno\\AlunoView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:35:18.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AlunoCreateDTO.cs",
+              "DocumentMoniker": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Aluno\\AlunoCreateDTO.cs",
+              "RelativeDocumentMoniker": "AppEscolar-BackEnd\\DTO\\Aluno\\AlunoCreateDTO.cs",
+              "ToolTip": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\DTO\\Aluno\\AlunoCreateDTO.cs",
+              "RelativeToolTip": "AppEscolar-BackEnd\\DTO\\Aluno\\AlunoCreateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-30T14:35:17.534Z",
+              "EditorCaption": ""
             }
           ]
         }
