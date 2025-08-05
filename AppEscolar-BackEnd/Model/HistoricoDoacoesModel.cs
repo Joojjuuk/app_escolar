@@ -6,16 +6,21 @@ namespace AppEscolar_BackEnd.Model
     public class HistoricoDoacoesModel
     {
         [Key]
-        public int Id { get; set; }
-
-        [ForeignKey("AlunoModel")]
-        public int Aluno_Id { get; set; }
-        
-        [Required]
-        public decimal Creditos_Ganhos { get; set; } = 0;
+        public Guid Id { get; set; } = Guid.NewGuid();
 
         [Required]
-        public DateTime Data_Doacao { get; set; } = DateTime.Now;
+        public string CodigoUnico { get; set; }
 
+        [Required]
+        [Column(TypeName = "decimal(10, 2)")]
+        public decimal ValorReais { get; set; }
+
+        public bool FoiUsado { get; set; } = false;
+
+        public DateTime DataGeracao { get; set; } = DateTime.UtcNow;
+        public DateTime? DataUso { get; set; }
+        public Guid? AlunoIdUso { get; set; }
+        [ForeignKey("AlunoIdUso")]
+        public AlunoModel AlunoQueUsou { get; set; }
     }
 }

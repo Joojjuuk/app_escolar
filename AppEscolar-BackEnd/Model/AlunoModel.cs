@@ -7,7 +7,7 @@ namespace AppEscolar_BackEnd.Model
     {
         [Key]
         [ForeignKey("UsuarioModel")]
-        public int Usuario_Id { get; set; }
+        public Guid Usuario_Id { get; set; }
         [Required]
         [StringLength(11)]
         public string Name { get; set; } 
@@ -15,8 +15,8 @@ namespace AppEscolar_BackEnd.Model
         [StringLength(11)]
         public string Ra { get; set; }
         public float Creditos { get; set; } = 0;
-        public float Int { get; set; } = 0;
 
+        public UsuarioModel Usuario { get; set; }
         public ICollection<HistoricoDoacoesModel> HistoricoDoacoes { get; set; } = new List<HistoricoDoacoesModel>();
 
     }

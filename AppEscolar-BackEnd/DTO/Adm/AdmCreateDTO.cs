@@ -4,7 +4,7 @@ namespace AppEscolar_BackEnd.DTO.Adm
 {
     public class AdmCreateDTO
     {
-        public int Usuario_Id { get; set; }
+        public Guid Usuario_Id { get; set; }
         [Required(ErrorMessage = "O Email é obrigatório.")]
         [EmailAddress(ErrorMessage = "O Email fornecido não é válido.")]
         public string Email { get; set; }

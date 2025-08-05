@@ -10,7 +10,7 @@ namespace AppEscolar_BackEnd.DTO.Auth.Aluno
 
         [Required(ErrorMessage = "O campo de Senha é obrigatório.")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
+        public string Senha { get; set; }
 
         [Required(ErrorMessage = "O campo de Email é obrigatório.")]
         [EmailAddress]

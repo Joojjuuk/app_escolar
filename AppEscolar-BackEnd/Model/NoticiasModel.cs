@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 
 namespace AppEscolar_BackEnd.Model
@@ -7,7 +8,7 @@ namespace AppEscolar_BackEnd.Model
     {
 
         [Key]
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required]
         [StringLength(100)]
@@ -22,7 +23,12 @@ namespace AppEscolar_BackEnd.Model
         public string ImagemUrl { get; set; } // URL da imagem associada à notícia
         [Required]
         public string Autor { get; set; }
-       
+
+
+        public AdmModel Adm { get; set; }
+        [ForeignKey("AutorId")]
+        public AdmModel AutorAdm { get; set; } 
+
     }
     public enum ETipoNoticia
     {

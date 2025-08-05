@@ -7,12 +7,13 @@ namespace AppEscolar_BackEnd.Model
     {
        [Key]
        [ForeignKey("UsuarioModel")]
-       public int Usuario_id { get; set; }
+       public Guid Usuario_id { get; set; }
        [Required]
        public string Nome { get; set; }
        public string Cargo { get;set; }
 
-       [Required]
+
+       public UsuarioModel Usuario { get; set; } 
        public ICollection<NoticiasModel> NoticiasPublicadas { get; set; } = new List<NoticiasModel>();
 
     }
