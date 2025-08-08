@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "CAVrT+F+I2w=",
+  "dgSpecHash": "nxO/LSFImpI=",
   "success": true,
   "projectFilePath": "C:\\ProjetosEmFlutter\\Pei Sustentabilidade\\AppEscolar-BackEnd\\AppEscolar-BackEnd\\AppEscolar-BackEnd.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Pichau\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.18\\microsoft.aspnetcore.authentication.jwtbearer.8.0.18.nupkg.sha512",
     "C:\\Users\\Pichau\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

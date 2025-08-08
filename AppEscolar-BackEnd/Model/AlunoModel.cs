@@ -6,11 +6,11 @@ namespace AppEscolar_BackEnd.Model
     public class AlunoModel
     {
         [Key]
-        [ForeignKey("UsuarioModel")]
+        [ForeignKey("Usuario")]
         public Guid Usuario_Id { get; set; }
         [Required]
         [StringLength(11)]
-        public string Name { get; set; } 
+        public string Nome { get; set; } 
         [Required]
         [StringLength(11)]
         public string Ra { get; set; }

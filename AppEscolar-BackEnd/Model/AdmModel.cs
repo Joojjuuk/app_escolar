@@ -6,7 +6,7 @@ namespace AppEscolar_BackEnd.Model
     public class AdmModel
     {
        [Key]
-       [ForeignKey("UsuarioModel")]
+       [ForeignKey("Usuario")]
        public Guid Usuario_id { get; set; }
        [Required]
        public string Nome { get; set; }

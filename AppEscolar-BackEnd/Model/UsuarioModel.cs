@@ -14,12 +14,8 @@ namespace AppEscolar_BackEnd.Model
         [Required]
         public string Senha { get; set; }
 
-
         [Required]
         public ETipoUsuario TipoUsuario { get; set; }
-
-        public AdmModel Adm { get; set; }
-        public AlunoModel Aluno { get; set; }
     }
 
     public enum ETipoUsuario

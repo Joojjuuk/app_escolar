@@ -1,1 +1,52 @@
-[]
+[
+  {
+    "ContainingType": "Program\u002B\u003C\u003Ec",
+    "Method": "\u003C\u003CMain\u003E$\u003Eb__0_1",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AppEscolar_BackEnd.Controllers.AlunosControllers.AlunoController",
+    "Method": "ObterAlunoPorIdAsync",
+    "RelativePath": "api/Aluno/{usuarioId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppEscolar_BackEnd.Controllers.AlunosControllers.AlunoController",
+    "Method": "CadastrarAlunoAsync",
+    "RelativePath": "api/Aluno/cadastrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "alunoCreateDTO",
+        "Type": "AppEscolar_BackEnd.DTO.Auth.Aluno.AlunoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

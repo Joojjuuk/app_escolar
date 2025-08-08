@@ -25,7 +25,7 @@ namespace AppEscolar_BackEnd.Model
         public string Autor { get; set; }
 
 
-        public AdmModel Adm { get; set; }
+        public Guid AutorId { get; set; }
         [ForeignKey("AutorId")]
         public AdmModel AutorAdm { get; set; } 
 

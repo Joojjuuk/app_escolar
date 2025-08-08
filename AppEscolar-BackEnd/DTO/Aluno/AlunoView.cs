@@ -12,7 +12,7 @@ namespace AppEscolar_BackEnd.DTO.Auth.Aluno
         public string Email { get; set; }
         public float Creditos { get; set; }
 
-        public ICollection<HistoricoDoacaoView> HistoricoView{ get; set; }
+        public ICollection<HistoricoDoacaoView> HistoricoDoacao{ get; set; }
     }
 
 

@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace AppEscolar_BackEnd.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20250729011239_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250806021536_CriacaoInicialDoBanco")]
+    partial class CriacaoInicialDoBanco
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -27,11 +27,8 @@ namespace AppEscolar_BackEnd.Migrations
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.AdmModel", b =>
                 {
-                    b.Property<int>("Usuario_id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Usuario_id"));
+                    b.Property<Guid>("Usuario_id")
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Cargo")
                         .IsRequired()
@@ -48,19 +45,13 @@ namespace AppEscolar_BackEnd.Migrations
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.AlunoModel", b =>
                 {
-                    b.Property<int>("Usuario_Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Usuario_Id"));
+                    b.Property<Guid>("Usuario_Id")
+                        .HasColumnType("uuid");
 
                     b.Property<float>("Creditos")
                         .HasColumnType("real");
 
-                    b.Property<float>("Int")
-                        .HasColumnType("real");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(11)
                         .HasColumnType("character varying(11)");
@@ -77,45 +68,48 @@ namespace AppEscolar_BackEnd.Migrations
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.HistoricoDoacoesModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                    b.Property<Guid?>("AlunoIdUso")
+                        .HasColumnType("uuid");
 
-                    b.Property<int?>("AlunoModelUsuario_Id")
-                        .HasColumnType("integer");
+                    b.Property<string>("CodigoUnico")
+                        .IsRequired()
+                        .HasColumnType("text");
 
-                    b.Property<int>("Aluno_Id")
-                        .HasColumnType("integer");
-
-                    b.Property<decimal>("Creditos_Ganhos")
-                        .HasColumnType("numeric");
-
-                    b.Property<DateTime>("Data_Doacao")
+                    b.Property<DateTime>("DataGeracao")
                         .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime?>("DataUso")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("FoiUsado")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal>("ValorReais")
+                        .HasColumnType("decimal(10, 2)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AlunoModelUsuario_Id");
+                    b.HasIndex("AlunoIdUso");
 
                     b.ToTable("HistoricoDoacoes");
                 });
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.NoticiasModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<int?>("AdmModelUsuario_id")
-                        .HasColumnType("integer");
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Autor")
                         .IsRequired()
                         .HasColumnType("text");
+
+                    b.Property<Guid>("AutorId")
+                        .HasColumnType("uuid");
 
                     b.Property<DateTime>("DataPublicacao")
                         .HasColumnType("timestamp with time zone");
@@ -138,18 +132,16 @@ namespace AppEscolar_BackEnd.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AdmModelUsuario_id");
+                    b.HasIndex("AutorId");
 
                     b.ToTable("Noticias");
                 });
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.UsuarioModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+                        .HasColumnType("uuid");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -159,23 +151,54 @@ namespace AppEscolar_BackEnd.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("TipoUsuario")
+                        .HasColumnType("integer");
+
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("AppEscolar_BackEnd.Model.AdmModel", b =>
+                {
+                    b.HasOne("AppEscolar_BackEnd.Model.UsuarioModel", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("Usuario_id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("AppEscolar_BackEnd.Model.AlunoModel", b =>
+                {
+                    b.HasOne("AppEscolar_BackEnd.Model.UsuarioModel", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("Usuario_Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
             modelBuilder.Entity("AppEscolar_BackEnd.Model.HistoricoDoacoesModel", b =>
                 {
-                    b.HasOne("AppEscolar_BackEnd.Model.AlunoModel", null)
+                    b.HasOne("AppEscolar_BackEnd.Model.AlunoModel", "AlunoQueUsou")
                         .WithMany("HistoricoDoacoes")
-                        .HasForeignKey("AlunoModelUsuario_Id");
+                        .HasForeignKey("AlunoIdUso");
+
+                    b.Navigation("AlunoQueUsou");
                 });
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.NoticiasModel", b =>
                 {
-                    b.HasOne("AppEscolar_BackEnd.Model.AdmModel", null)
+                    b.HasOne("AppEscolar_BackEnd.Model.AdmModel", "AutorAdm")
                         .WithMany("NoticiasPublicadas")
-                        .HasForeignKey("AdmModelUsuario_id");
+                        .HasForeignKey("AutorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AutorAdm");
                 });
 
             modelBuilder.Entity("AppEscolar_BackEnd.Model.AdmModel", b =>
