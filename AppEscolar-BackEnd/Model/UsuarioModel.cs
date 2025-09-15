@@ -10,7 +10,8 @@ namespace AppEscolar_BackEnd.Model
         [EmailAddress]
         [Required]
         public string Email { get; set; }
-
+        [Required]
+        public string Nome { get; set; }
         [Required]
         public string Senha { get; set; }
 

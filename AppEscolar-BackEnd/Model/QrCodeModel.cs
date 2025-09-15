@@ -12,10 +12,11 @@ namespace AppEscolar_BackEnd.Model
         public string QrCode { get; set; }
 
         [Required]
-        public string QrCodeType { get; set; }
+        [Column(TypeName = "decimal(10,2)")]
+        public decimal Pontos{ get; set; }
 
         [Required]
-        public bool FoiUsado { get; set; }
+        public bool FoiUsado { get; set; } = false;
 
         [Required]
         public DateTime DataCriacao { get; set; }

@@ -12,5 +12,8 @@ namespace AppEscolar_BackEnd.Data
         public DbSet<Model.AlunoModel> Alunos { get; set; }
         public DbSet<Model.AdmModel> Admins { get; set; }
         public DbSet<Model.HistoricoDoacoesModel> HistoricoDoacoes { get; set; }
+        public DbSet<Model.QrCodeModel> QrCode { get; set; }
+
+
     }
 }

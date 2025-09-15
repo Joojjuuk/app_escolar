@@ -2,27 +2,46 @@ using AppEscolar_BackEnd.Data;
 using AppEscolar_BackEnd.Services.Token;
 using AppEscolar_BackEnd.Services.Aluno;
 using AppEscolar_BackEnd.Services.Interfaces;
+using AppEscolar_BackEnd.Services.Usuarios;
 using Microsoft.EntityFrameworkCore;
-using AppEscolar_BackEnd.Model;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
 builder.Services.AddScoped<TokenService>();
 builder.Services.AddScoped<IAlunoService, AlunoService>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
-
 
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+// Configuração JWT
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = false,
+        ValidateAudience = false,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppEscolar_BackEnd.Configuration.PrivateKey))
+    };
+});
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -31,19 +50,9 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapGet("/", (TokenService service
-    ) => service.Generate(new UsuarioModel
-    {
-        Id = Guid.NewGuid(),
-        Email = "Teste@email.com",
-        Senha = "123",
-        TipoUsuario = ETipoUsuario.Aluno,
-
-
-    }));
 
 app.Run();

@@ -5,6 +5,141 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Adm/cadastrar": {
+      "post": {
+        "tags": [
+          "Adm"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdmCreateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdmCreateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AdmCreateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adm/noticia": {
+      "post": {
+        "tags": [
+          "Adm"
+        ],
+        "parameters": [
+          {
+            "name": "autorId",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNoticiaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNoticiaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateNoticiaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Adm/noticia/{id}": {
+      "put": {
+        "tags": [
+          "Adm"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNoticiaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNoticiaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateNoticiaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Adm"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Aluno/cadastrar": {
       "post": {
         "tags": [
@@ -59,21 +194,149 @@
         }
       }
     },
-    "/": {
+    "/api/QrCode/resgatar": {
+      "post": {
+        "tags": [
+          "QrCode"
+        ],
+        "parameters": [
+          {
+            "name": "foiUsado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ViewQrCodeDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ViewQrCodeDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ViewQrCodeDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/cadastrar": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UsuarioModel"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/{id}": {
       "get": {
         "tags": [
-          "AppEscolar-BackEnd"
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "string"
-                }
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/email/{email}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "email",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/User/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginDTO"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -81,6 +344,39 @@
   },
   "components": {
     "schemas": {
+      "AdmCreateDTO": {
+        "required": [
+          "cargo",
+          "email",
+          "nome",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "usuario_Id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "nome": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "cargo": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
       "AlunoCreateDTO": {
         "required": [
           "email",
@@ -109,6 +405,144 @@
             "maxLength": 20,
             "minLength": 0,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateNoticiaDTO": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagemUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "dataPublicacao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tipoNoticia": {
+            "$ref": "#/components/schemas/ETipoNoticia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ETipoNoticia": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "ETipoUsuario": {
+        "enum": [
+          1,
+          2,
+          3
+        ],
+        "type": "integer",
+        "format": "int32"
+      },
+      "LoginDTO": {
+        "required": [
+          "email",
+          "senha"
+        ],
+        "type": "object",
+        "properties": {
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string",
+            "format": "password"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateNoticiaDTO": {
+        "type": "object",
+        "properties": {
+          "titulo": {
+            "maxLength": 100,
+            "minLength": 0,
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
+          },
+          "imagemUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "tipoNoticia": {
+            "$ref": "#/components/schemas/ETipoNoticia"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UsuarioModel": {
+        "required": [
+          "email",
+          "senha",
+          "tipoUsuario"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "email": {
+            "minLength": 1,
+            "type": "string",
+            "format": "email"
+          },
+          "senha": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "tipoUsuario": {
+            "$ref": "#/components/schemas/ETipoUsuario"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ViewQrCodeDTO": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "qrCode": {
+            "type": "string",
+            "nullable": true
+          },
+          "pontos": {
+            "type": "number",
+            "format": "double"
+          },
+          "foiUsado": {
+            "type": "boolean"
+          },
+          "dataGeracao": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

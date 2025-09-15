@@ -10,7 +10,7 @@ namespace AppEscolar_BackEnd.Model
         public Guid Usuario_Id { get; set; }
         [Required]
         [StringLength(11)]
-        public string Nome { get; set; } 
+        public string Nome { get; set; }
         [Required]
         [StringLength(11)]
         public string Ra { get; set; }
