@@ -243,17 +243,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioModel"
+                "$ref": "#/components/schemas/UserCreateDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioModel"
+                "$ref": "#/components/schemas/UserCreateDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioModel"
+                "$ref": "#/components/schemas/UserCreateDTO"
               }
             }
           }
@@ -353,10 +353,6 @@
         ],
         "type": "object",
         "properties": {
-          "usuario_Id": {
-            "type": "string",
-            "format": "uuid"
-          },
           "email": {
             "minLength": 1,
             "type": "string",
@@ -443,15 +439,6 @@
         "type": "integer",
         "format": "int32"
       },
-      "ETipoUsuario": {
-        "enum": [
-          1,
-          2,
-          3
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
       "LoginDTO": {
         "required": [
           "email",
@@ -495,17 +482,17 @@
         },
         "additionalProperties": false
       },
-      "UsuarioModel": {
+      "UserCreateDTO": {
         "required": [
           "email",
-          "senha",
-          "tipoUsuario"
+          "nome",
+          "senha"
         ],
         "type": "object",
         "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
+          "nome": {
+            "minLength": 1,
+            "type": "string"
           },
           "email": {
             "minLength": 1,
@@ -513,11 +500,8 @@
             "format": "email"
           },
           "senha": {
-            "minLength": 1,
+            "minLength": 6,
             "type": "string"
-          },
-          "tipoUsuario": {
-            "$ref": "#/components/schemas/ETipoUsuario"
           }
         },
         "additionalProperties": false

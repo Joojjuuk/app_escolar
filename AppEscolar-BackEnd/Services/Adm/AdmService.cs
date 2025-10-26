@@ -19,14 +19,14 @@ namespace AppEscolar_BackEnd.Services.Adm
                 throw new Exception("Email em uso.");
             }
 
-            // código hash para segurança senha
             string senhaHash = BCrypt.Net.BCrypt.HashPassword(admCreateDTO.Senha);
 
             var novoUser = new Model.UsuarioModel
             {
                 Email = admCreateDTO.Email,
                 Senha = senhaHash,
-                TipoUsuario = Model.ETipoUsuario.Administrador
+                TipoUsuario = Model.ETipoUsuario.Administrador,
+                Nome = admCreateDTO.Nome
             };
 
             var novoAdm = new Model.AdmModel

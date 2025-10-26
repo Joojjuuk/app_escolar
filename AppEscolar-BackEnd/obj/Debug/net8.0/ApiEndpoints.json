@@ -151,8 +151,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuario",
-        "Type": "AppEscolar_BackEnd.Model.UsuarioModel",
+        "Name": "usuarioDTO",
+        "Type": "AppEscolar_BackEnd.DTO.User.UserCreateDTO",
         "IsRequired": true
       }
     ],
