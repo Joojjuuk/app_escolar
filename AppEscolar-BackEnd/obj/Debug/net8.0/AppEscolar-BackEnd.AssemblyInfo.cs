@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppEscolar-BackEnd")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4871920cf6f9163ec27be8244f68b699818b454c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b40e80d3377c3bbc481a706d58cfebdabeb219d")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppEscolar-BackEnd")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppEscolar-BackEnd")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

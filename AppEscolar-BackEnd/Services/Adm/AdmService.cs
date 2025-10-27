@@ -29,6 +29,10 @@ namespace AppEscolar_BackEnd.Services.Adm
                 Nome = admCreateDTO.Nome
             };
 
+           
+            _context.Usuarios.Add(novoUser);
+            await _context.SaveChangesAsync();
+
             var novoAdm = new Model.AdmModel
             {
                 Usuario_id = novoUser.Id,
@@ -47,8 +51,6 @@ namespace AppEscolar_BackEnd.Services.Adm
                 Email = novoUser.Email,
                 Cargo = novoAdm.Cargo
             };
-
-
         }
         async Task<ViewNoticiaDTO> IAdmService.CriarNoticia(CreateNoticiaDTO noticiaDTO, Guid autorId)
         {
@@ -67,6 +69,7 @@ namespace AppEscolar_BackEnd.Services.Adm
                 ImagemUrl = noticiaDTO.ImagemUrl,
                 TipoNoticia = noticiaDTO.TipoNoticia,
                 AutorId = autorId,
+                Autor = autor.Nome 
             };
 
             _context.Noticias.Add(novaNoticia);
@@ -81,7 +84,6 @@ namespace AppEscolar_BackEnd.Services.Adm
                 Categoria = novaNoticia.TipoNoticia.ToString(),
                 DataPublicacao = novaNoticia.DataPublicacao,
                 NomeAutor = autor.Nome
-
             };
         }
         async Task<UpdateNoticiaDTO> IAdmService.EditarNoticiaAsync(Guid noticiaId, UpdateNoticiaDTO noticiaDto)
